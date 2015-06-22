@@ -24,10 +24,14 @@
         </div>
         <div class="home-contact">
             <a href="http://weibo.com/duandun/" target="_blank" style="margin-left:-5px;"><img src="http://www.weibo.com/favicon.ico" alt="" width="25"/></a>
-            <a href="http://www.douban.com/people/duandun/" target="_blank" style="text-align:center;"><img src="http://www.douban.com/favicon.ico" alt="" width="22"/></a>
-            <a href="" target="_blank" style="text-align:right"><img src="http://d36xtkk24g8jdx.cloudfront.net/bluebar/00c6602/images/ico/favicon.ico" alt="" width="22"/></a>
+            <a href="http://user.qzone.qq.com/609782646/main" target="_blank" style="text-align:center;"><img src="http://cnc.qzonestyle.gtimg.cn/aoi/img/logo/favicon.ico?max_age=31536000" alt="" width="22"/></a>
+            <a href="" target="_blank" style="text-align:right" class="weixin"><img src="https://res.wx.qq.com/zh_CN/htmledition/images/favicon.ico" /></a>
+        </div>
+        <div class="crweixin" style="display:none;">
+            <img src="../images/cr.jpg" height="150" width="117" alt="" >
         </div>
     </div>
+
 
     {{ content }}
 
@@ -42,6 +46,12 @@
                     // }else{
                     //     $('.home-contact').slideToggle(100);
                     // }
+            });
+            $(".home-contact > a.weixin").hover(function() {
+                $(".crweixin").show();
+            }, function() {
+                /* Stuff to do when the mouse leaves the element */
+                $(".crweixin").hide();   
             });
         });
     </script>
